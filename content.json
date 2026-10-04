@@ -1,0 +1,379 @@
+{
+  "_help": [
+    "NK-01 PORTFOLIO CONTENT — edit this file, never index.html.",
+    "On GitHub: open content.json → pencil icon → edit → Commit changes. The site updates on next refresh.",
+    "Rules: keep the structure (quotes, commas, brackets) intact — a missing comma breaks the whole file and the site falls back to its built-in content.",
+    "Text in *_html or 'bullets' or modal 'b' fields may contain HTML like <b>bold</b>; everything else is plain text.",
+    "Validate after editing: paste the file into jsonlint.com if unsure.",
+    "Images: game covers g1.jpg..(covers/ folder), song covers m1.jpg.. — change the 'img' paths here if you rename files.",
+    "Monthly soundtrack update: edit off_duty.soundtrack (label, minutes, artists, songs, footnote).",
+    "Certificates: drop images at covers/cert1.jpg (cert2, cert3...) — any modal entry supports an 'img' field shown at the top. Delete a cert's 'b' paragraphs to show the certificate image alone. 'links' sets the button label + URL (e.g. a Credly/Coursera verify link).",
+    "EVERY visible text is editable here: topbar (sig/status/nav/resume/sound labels), ticker lines, hero, section headers, skills categories, contact cards + bottom banner, footer. Delete any whole section from this file to keep that part's built-in default."
+  ],
+
+  "topbar": {
+    "sig": "SYS://NK-01",
+    "status": "LINK ESTABLISHED",
+    "nav": [
+      ["Arsenal", "#skills"],
+      ["Experience", "#experience"],
+      ["Projects", "#projects"],
+      ["Latest", "#sortie"],
+      ["Side Ops", "#sideops"],
+      ["Record", "#record"],
+      ["Off Duty", "#offduty"],
+      ["Contact", "#contact"]
+    ],
+    "resume": ["▼ Resume", "https://drive.google.com/file/d/17GGFC2VRKiBl0ndhsAdYLKTw9UvnD8TR/view?usp=drive_link"],
+    "sound": {"on": "♪ Sound: On", "off": "♪ Sound: Off", "none": "♪ No tracks"}
+  },
+
+  "ticker": [
+    "PYTHON", "FASTAPI", "<b>RAG PIPELINES</b>", "REDIS", "POSTGRESQL", "DOCKER", "AWS",
+    "<b>&lt;10MS P99</b>", "AMAZON ML CHALLENGE ’26 — <b>0.949 F0.5</b>", "24.2M RECORDS",
+    "DISCORD BOTS", "GAME DEV"
+  ],
+
+  "hero": {
+    "eyebrow": "Backend Developer · AI Systems",
+    "title_html": "<span class=\"glitch\" data-t=\"NAREN\">NAREN</span><br><span class=\"glitch\" data-t=\"KUMAR\">KUMAR</span> <em>S.</em>",
+    "kata": "バックエンド開発者",
+    "sub_html": "I build backend systems that hold up under pressure — and I ship constantly. At <b>Wimera Systems</b> I took a RAG pipeline over live industrial IoT data to production. My latest: an entity-resolution pipeline processing <b>24.2 million business records</b> for the Amazon ML Challenge ’26, scoring <b>0.949 macro F0.5</b> on the public leaderboard. Also on the record: a distributed URL shortener holding <b>&lt;10ms p99</b>, a real-time voice AI, Discord bots, and the occasional space shooter. Now looking for my first full-time <b>backend engineering role</b>.",
+    "tags": [
+      ["STATUS", "OPEN TO WORK"],
+      ["SEEKING", "BACKEND / PYTHON / AI ENG"],
+      ["LOC", "COIMBATORE / BENGALURU, IN"]
+    ],
+    "ctas": [
+      ["▼ Resume", "https://drive.google.com/file/d/17GGFC2VRKiBl0ndhsAdYLKTw9UvnD8TR/view?usp=drive_link", "acid"],
+      ["⌁ GitHub", "https://github.com/naren-afk", ""],
+      ["⌁ LinkedIn", "https://linkedin.com/in/narenkumar44", ""],
+      ["Open Channel ▾", "#contact", ""]
+    ]
+  },
+
+  "headers": {
+    "skills":     {"no": "FILE 01", "h2": "ARSENAL",         "jp": "技術仕様"},
+    "experience": {"no": "FILE 02", "h2": "FIELD RECORD",    "jp": "実務経歴"},
+    "projects":   {"no": "FILE 03", "h2": "DEPLOYED UNITS",  "jp": "開発計画"},
+    "sortie":     {"no": "FILE 04", "h2": "LATEST SORTIE",   "jp": "最新作戦"},
+    "sideops":    {"no": "FILE 05", "h2": "SIDE OPS",        "jp": "課外作戦"},
+    "record":     {"no": "FILE 06", "h2": "SERVICE RECORD",  "jp": "経歴記録"},
+    "offduty":    {"no": "FILE 07", "h2": "OFF DUTY",        "jp": "非番記録"},
+    "contact":    {"no": "FILE 08", "h2": "OPEN CHANNEL",    "jp": "連絡手段"}
+  },
+
+  "skills": {
+    "cats": [
+      {"name": "Languages",      "chips": [{"t":"Python","hot":true},{"t":"SQL","hot":true},"JavaScript"]},
+      {"name": "Backend",        "chips": [{"t":"FastAPI","hot":true},"Flask","Django","REST APIs","WebSockets","Webhooks"]},
+      {"name": "AI Engineering", "chips": [{"t":"RAG","hot":true},{"t":"MCP","hot":true},"LangChain","LangGraph","Prompt Engineering","LM Studio"]},
+      {"name": "ML / Data",      "chips": [{"t":"LightGBM","hot":true},"FAISS","Embeddings","Hugging Face","Pandas","TF-IDF"]},
+      {"name": "Databases",      "chips": [{"t":"PostgreSQL","hot":true},{"t":"Redis","hot":true}]},
+      {"name": "Infrastructure", "chips": [{"t":"Docker","hot":true},{"t":"AWS","hot":true},"EC2","S3","Nginx","Modal","Git"]},
+      {"name": "Frontend",       "chips": ["React","HTML","CSS"]}
+    ]
+  },
+
+  "contact": {
+    "cards": [
+      {"label": "GitHub",                "name": "naren-afk",     "url": "https://github.com/naren-afk",                "pfp_img": "https://github.com/naren-afk.png?size=96", "pfp_text": "NK"},
+      {"label": "LinkedIn",              "name": "Naren Kumar",   "url": "https://linkedin.com/in/narenkumar44",        "pfp_text": "NK"},
+      {"label": "Discord · Add / Message","name": "microstar.x",  "url": "https://discord.com/users/748495143211892747","pfp_text": "MX", "pfp_id": "ccDiscordPfp", "title": "Add friend or message on Discord"},
+      {"label": "E-Mail · Compose",      "name": "narenkumars044","url": "https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=narenkumars044@gmail.com&su=Incoming%20opportunity%20%2F%2F%20via%20portfolio", "pfp_text": "@", "title": "Compose an email in Gmail"}
+    ],
+    "cta": {
+      "kicker": "Open Frequency",
+      "text_html": "Hiring for backend / Python / AI engineering? I reply fast — every channel above reaches me, and the resume is one click away.",
+      "buttons": [
+        ["▼ Resume", "https://drive.google.com/file/d/17GGFC2VRKiBl0ndhsAdYLKTw9UvnD8TR/view?usp=drive_link"],
+        ["✉ Compose", "https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=narenkumars044@gmail.com&su=Incoming%20opportunity%20%2F%2F%20via%20portfolio"]
+      ]
+    }
+  },
+
+  "footer": ["NK-01 // PERSONNEL FILE", "LAST SYNC: 2026", "ALL SYSTEMS NOMINAL"],
+
+  "field_record": {
+    "modal": "wimera",
+    "rail_big": "’25",
+    "rail_sub": "APR — OCT<br>2025",
+    "status": "COMPLETE",
+    "title": "Full Stack Intern — Wimera Systems",
+    "meta": [ {"text": "Bengaluru, India"}, {"text": "Industrial IoT", "live": true} ],
+    "bullets": [
+      "Shipped a <b>production RAG chatbot</b> over live machine data — engineers ask questions in plain language instead of digging through logs.",
+      "Built an <b>automated reporting pipeline</b> turning raw IoT logs into actionable summaries for production teams.",
+      "Wired <b>AI-driven insights</b> into existing monitoring dashboards.",
+      "Hardened the system with <b>multi-tenant access controls</b> for organization-level data isolation."
+    ],
+    "button": "View Technical Breakdown ⊕"
+  },
+
+  "projects": [
+    {
+      "modal": "urlshort",
+      "rail_big": "01",
+      "rail_label": "SCALABLE<br>BACKEND",
+      "status": "DEPLOYED",
+      "title": "Distributed URL Shortener",
+      "stack": "Python · FastAPI · PostgreSQL · Redis · Docker · Nginx · AWS EC2",
+      "bullets": [
+        "Read-heavy service on AWS EC2 — horizontally scalable instances behind Nginx.",
+        "Redis cache on the redirect hot path: <b>&lt;10ms p99 latency</b>.",
+        "Async FastAPI, connection pooling, background workers for click analytics."
+      ],
+      "repo": "https://github.com/naren-afk/Distributed_URL_Shortener"
+    },
+    {
+      "modal": "convai",
+      "rail_big": "02",
+      "rail_label": "VOICE<br>AI",
+      "status": "DEPLOYED",
+      "title": "Conversational AI Playground",
+      "stack": "Python · FastAPI · FasterWhisper · KokoroTTS · Docker · LM Studio",
+      "bullets": [
+        "Real-time voice conversations with an LLM — <b>FasterWhisper</b> ears, <b>KokoroTTS</b> voice.",
+        "FastAPI backend for audio processing, transcription, low-latency generation.",
+        "Bidirectional, context-aware dialogue, tuned end-to-end for responsiveness."
+      ],
+      "repo": "https://github.com/naren-afk/Conversational_AI"
+    },
+    {
+      "modal": "localrag",
+      "rail_big": "03",
+      "rail_label": "LOCAL<br>RAG",
+      "status": "DEPLOYED",
+      "title": "Local RAG Research Assistant",
+      "stack": "Python · Flask · FAISS · SentenceTransformers · PyMuPDF · LM Studio",
+      "bullets": [
+        "Query your documents with <b>fully offline LLM inference</b> — nothing leaves the machine.",
+        "Semantic search via SentenceTransformers + FAISS; context-grounded prompting.",
+        "Clean APIs for document management and real-time querying."
+      ],
+      "repo": "https://github.com/naren-afk/Basic-RAG-Test"
+    }
+  ],
+
+  "sortie": {
+    "modal": "amazonml",
+    "badge": "⚠ Fresh Deployment · Sep 2026",
+    "title": "Business Entity Resolution at Scale — Amazon ML Challenge ’26",
+    "meta": "Team ZERO · LightGBM · TF-IDF · Modal · MIT-licensed",
+    "lead_html": "Matching business records across three sources — <b>24.2 million records processed</b> across the US, India, and France, riddled with mixed scripts, injected typos, planted look-alike records, and almost no postcodes. The pipeline: custom <b>transliteration of nine Indic scripts</b> with a phonetic consonant skeleton, TF-IDF blocking that recovers <b>95.4% of true pairs from 0.0004%</b> of all possible pairs, and a <b>46-feature LightGBM classifier</b> with per-record threshold optimization.",
+    "stats": [
+      ["0.949", "Public LB · Macro F0.5"],
+      ["0.961", "Held-out validation"],
+      ["24.2M", "Records processed"],
+      ["~2h", "End-to-end · 16 cores"]
+    ],
+    "pipeline": ["Normalize", "Block", "Match", "Threshold"],
+    "repo": "https://github.com/naren-afk/Amazon-ML-Challenge-2026"
+  },
+
+  "side_ops": [
+    {
+      "name": "Experimental Builds",
+      "color": "acid",
+      "tagline": "Ideas under live fire",
+      "items": [
+        {"title": "AI Traffic Management", "lang": "Python", "desc": "Applying AI to traffic flow — detection and signal optimization experiments.", "url": "https://github.com/naren-afk/AI-traffic-management-system"},
+        {"title": "Discord Bot", "lang": "Python", "desc": "Custom server automation — commands, events, and integrations.", "url": "https://github.com/naren-afk/discord-bot"}
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "color": "vio",
+      "tagline": "Models in the field",
+      "items": [
+        {"title": "Phishing Detector", "lang": "Jupyter", "desc": "ML-powered classification of phishing attempts — security meets data science.", "url": "https://github.com/naren-afk/AI-Powered-Phishing-Detector"},
+        {"title": "Bankruptcy Prediction", "lang": "Jupyter", "desc": "Financial risk modeling on real-world company data.", "url": "https://github.com/naren-afk/Bankruptcy-Prediction-"}
+      ]
+    },
+    {
+      "name": "Legacy Builds",
+      "color": "amber",
+      "tagline": "Where it started",
+      "items": [
+        {"title": "AI-Powered Chatbot", "lang": "Python", "desc": "Early conversational AI experiments that led to the bigger builds.", "url": "https://github.com/naren-afk/AI-Powered-Chatbot"}
+      ]
+    },
+    {
+      "name": "Creative Builds",
+      "color": "mag",
+      "tagline": "For the fun of it",
+      "items": [
+        {"title": "Space Shooter", "lang": "Python", "desc": "A classic arcade shooter — because sometimes you just build a game.", "url": "https://github.com/naren-afk/Space-Shooter-Game"}
+      ]
+    }
+  ],
+
+  "record": {
+    "heads": ["Education", "Certifications", "Operations Timeline"],
+    "education": {
+      "degree": "Integrated M.Sc. Software Systems",
+      "school": "Sri Krishna Arts and Science College — Coimbatore",
+      "years": "2022 – <b>2027 (expected)</b>",
+      "extra": "CGPA 7.3",
+      "note": "Five-year integrated program spanning software engineering, data structures, databases, and systems — with the applied side lived out in the repos above."
+    },
+    "certs": [
+      {"modal": "cert1", "title": "Intro to Data Engineering & Big Data", "org": "GUVI — IIT Madras", "desc": "Data pipelines, big data ecosystems, scalable processing architectures."},
+      {"modal": "cert2", "title": "AWS Fundamentals", "org": "Coursera", "desc": "Core AWS services (EC2, S3, IAM) and cloud architecture principles."},
+      {"modal": "cert3", "title": "DevOps, Cloud & Agile Development", "org": "Coursera", "desc": "CI/CD pipelines, DevOps practices, and Agile workflows."}
+    ],
+    "achievements": [
+      {"year": "2026", "title": "Amazon ML Challenge", "desc": "Entity resolution over 24.2M records — 0.949 macro F0.5 on the public leaderboard with Team ZERO."},
+      {"year": "—", "title": "SNS Tech Hackathon", "badge": "1st Place", "desc": "Took first place. Details incoming."},
+      {"year": "2024", "title": "Smart India Hackathon", "desc": "National-level hackathon — Government of India."},
+      {"year": "2023", "title": "Smart India Hackathon", "desc": "National-level hackathon — Government of India."},
+      {"year": "2023", "title": "KAVACH Cybersecurity Hackathon", "desc": "National cybersecurity hackathon."},
+      {"year": "—", "title": "KPR EV Charging Project", "desc": "EV charging systems project. Details incoming."}
+    ]
+  },
+
+  "off_duty": {
+    "username": "microstar.x",
+    "since": "Discord · Pilot since Aug 2020",
+    "deck_title": "Game Deck",
+    "deck_hint": "Select a card for intel",
+    "snd_title": "Soundtrack",
+    "artists_head": "Top Artists",
+    "beacon_note": "The floating beacon bottom-right mirrors my live Discord presence — a spinning record when I'm listening, a pulse when I'm in-game.",
+    "games": [
+      {"img": "covers/g1.jpg",  "art": "ga-field",   "initials": "ML",  "tag": "City Builder",   "name": "Manor Lords",               "about": "Growing a medieval village into a thriving manor — organic town planning, trade, and tactical battles."},
+      {"img": "covers/g2.jpg",  "art": "ga-royal",   "initials": "II",  "tag": "RTS",            "name": "Age of Empires II: DE",     "about": "The legendary real-time strategy — build, boom, and conquer across history's civilizations."},
+      {"img": "covers/g3.jpg",  "art": "ga-anemo",   "initials": "GI",  "tag": "Open World RPG", "name": "Genshin Impact",            "about": "Elemental combat and exploration across the open world of Teyvat."},
+      {"img": "covers/g4.jpg",  "art": "ga-tac",     "initials": "CS2", "tag": "Tactical FPS",   "name": "Counter-Strike 2",          "about": "The definitive tactical shooter — utility, aim, and clutch rounds."},
+      {"img": "covers/g5.jpg",  "art": "ga-dao",     "initials": "悟",  "tag": "Action RPG",     "name": "Black Myth: Wukong",        "about": "Journey to the West retold through brutal, beautiful boss fights."},
+      {"img": "covers/g6.jpg",  "art": "ga-race",    "initials": "ACC", "tag": "Sim Racing",     "name": "Assetto Corsa Competizione","about": "GT racing at its most serious — realistic handling, endurance, lap-time obsession."},
+      {"img": "covers/g7.jpg",  "art": "ga-ring",    "initials": "ER",  "tag": "Soulslike",      "name": "Elden Ring",                "about": "FromSoftware's open-world epic — exploration, punishment, and the best kind of triumph."},
+      {"img": "covers/g8.jpg",  "art": "ga-west",    "initials": "R2",  "tag": "Open World",     "name": "Red Dead Redemption 2",     "about": "Rockstar's western epic — an outlaw story told with unmatched detail."},
+      {"img": "covers/g9.jpg",  "art": "ga-crimson", "initials": "CD",  "tag": "Wishlist",       "name": "Crimson Desert",            "about": "Pearl Abyss' open-world action epic — awaiting deployment."},
+      {"img": "covers/g10.jpg", "art": "ga-rust",    "initials": "R",   "tag": "Wishlist",       "name": "Rust",                      "about": "Hardcore multiplayer survival. Trust no one."},
+      {"img": "covers/g11.jpg", "art": "ga-steel",   "initials": "R6",  "tag": "Wishlist",       "name": "Rainbow Six Siege",         "about": "Destruction-driven 5v5 tactics — every wall is a door."},
+      {"img": "covers/g12.jpg", "art": "ga-ink",     "initials": "GY",  "tag": "Wishlist",       "name": "Ghost of Yōtei",            "about": "The next samurai epic from Sucker Punch — on the list."}
+    ],
+    "soundtrack": {
+      "label": "Sep 2026 · Apple Music",
+      "minutes": "12,181",
+      "minutes_label": "Minutes · September",
+      "artists": [
+        ["The Weeknd", "7,934 min"],
+        ["Lily Rose Depp", "400 min"],
+        ["Shai", "377 min"],
+        ["Future", "329 min"],
+        ["Metro Boomin", "284 min"]
+      ],
+      "songs": [
+        {"img": "covers/m1.jpg", "initials": "DF", "bg": "linear-gradient(160deg,#2a1140,#120822 60%,#060310)", "title": "Double Fantasy (feat. Future)", "artist": "The Weeknd", "plays": "90 plays"},
+        {"img": "covers/m2.jpg", "initials": "IF", "bg": "linear-gradient(160deg,#102a3c,#081520 60%,#03080e)", "title": "If I Ever Fall In Love (Grooves Bedroom Mix)", "artist": "Shai", "plays": "79 plays"},
+        {"img": "covers/m3.jpg", "initials": "FV", "bg": "linear-gradient(160deg,#40101c,#20080e 60%,#0e0306)", "title": "Fill The Void", "artist": "The Weeknd, Lily Rose Depp & Ramsey", "plays": "78 plays"},
+        {"img": "covers/m4.jpg", "initials": "DD", "bg": "linear-gradient(160deg,#26262c,#121216 60%,#070709)", "title": "D.D.", "artist": "The Weeknd", "plays": "37 plays"},
+        {"img": "covers/m5.jpg", "initials": "SP", "bg": "linear-gradient(160deg,#0f3826,#071e14 60%,#030e09)", "title": "São Paulo", "artist": "The Weeknd & Anitta", "plays": "36 plays"}
+      ],
+      "apple_link": "https://music.apple.com/profile/sanyasman",
+      "footnote": "Top album: Trilogy — The Weeknd · 410 min"
+    },
+    "music_files": ["covers/theme.mp3", "covers/theme2.mp3", "covers/theme3.mp3"]
+  },
+
+  "modals": {
+    "wimera": {
+      "k": "FIELD RECORD · TECHNICAL BREAKDOWN",
+      "t": "Industrial IoT RAG Assistant — Wimera Systems",
+      "s": "Full Stack Intern · Apr–Oct 2025 · Bengaluru · Python, FastAPI, RAG",
+      "b": [
+        "<h4>The Context</h4><p>Wimera builds monitoring systems for factories. Machines stream telemetry around the clock; the resulting logs are voluminous, noisy, and only readable by people who know the schemas. My internship problem: make that data answerable in plain English for production engineers.</p>",
+        "<h4>System Architecture</h4><div class='arch'>Machine telemetry ──▸ Ingestion & cleaning\n                      │\n                      ▼\n            Chunking + embeddings ──▸ Vector index\n                                        │\nEngineer question ──▸ Retrieval ◂───────┘\n                      │\n                      ▼\n          Grounded LLM answer ──▸ Dashboard / report</div><p>A retrieval-augmented pipeline over the IoT data: logs are processed, chunked, and embedded; questions retrieve the relevant slices; the LLM answers grounded in what was retrieved rather than from memory.</p>",
+        "<h4>What I Built</h4><ul><li><b>The RAG chatbot</b> — end to end: ingestion, chunking strategy for time-series log data, retrieval, and grounded generation.</li><li><b>Automated reporting pipeline</b> — converts raw IoT logs into human-readable summaries on a schedule, removing a manual analysis step.</li><li><b>Dashboard integration</b> — AI-generated insights surfaced inside the monitoring dashboards teams already used, instead of yet another tool.</li><li><b>Multi-tenant access controls</b> — hard organization-level isolation, so each client only ever queries its own machines' data.</li></ul>",
+        "<h4>What It Taught Me</h4><p>Production RAG is 20% model, 80% data discipline: chunking decisions, retrieval quality, and grounding matter more than prompt cleverness. And the multi-tenant work taught me that <b>security design is backend engineering</b>, not an afterthought.</p>"
+      ],
+      "links": [["LinkedIn", "https://linkedin.com/in/narenkumar44"]]
+    },
+    "urlshort": {
+      "k": "DEPLOYED UNIT 01 · CASE STUDY",
+      "t": "Distributed URL Shortener",
+      "s": "Python · FastAPI · PostgreSQL · Redis · Docker · Nginx · AWS EC2",
+      "b": [
+        "<h4>Overview</h4><p>A deliberately simple product built the hard way: the goal was to learn what it takes to keep a read-heavy service fast under load — the same shape as any high-traffic redirect, CDN edge, or feature-flag lookup.</p>",
+        "<h4>Architecture</h4><div class='arch'>Client ──▸ Nginx (reverse proxy / LB)\n              │\n      ┌───────┴───────┐\n      ▼               ▼\n  FastAPI ×N      FastAPI ×N   (horizontally scalable)\n      │               │\n      ▼               ▼\n   Redis  ◂── hot path (cache)\n      │ miss\n      ▼\n PostgreSQL ◂── source of truth\n      ▲\n background workers — click analytics</div>",
+        "<h4>Key Decisions</h4><ul><li><b>Cache-first redirects:</b> the redirect path never touches Postgres if Redis can answer — that's what holds <b>&lt;10ms p99</b>.</li><li><b>Async everywhere:</b> FastAPI with connection pooling; analytics writes go through background workers so a click count never blocks a redirect.</li><li><b>Stateless app tier:</b> instances scale horizontally behind Nginx because all state lives in Redis/Postgres.</li><li><b>Managed data stores:</b> traded some control for reliability and easier ops.</li></ul>",
+        "<h4>Challenges</h4><p>The interesting problems were cache invalidation on updated links, keeping analytics eventually-consistent without losing clicks, and tuning pool sizes so bursts didn't exhaust connections.</p>",
+        "<h4>Results</h4><p><b>&lt;10ms p99 redirect latency</b> under read-heavy load, with the database shielded by the cache layer. Full setup and decisions documented in the repo.</p>"
+      ],
+      "links": [["Repository", "https://github.com/naren-afk/Distributed_URL_Shortener"]]
+    },
+    "convai": {
+      "k": "DEPLOYED UNIT 02 · CASE STUDY",
+      "t": "Conversational AI Playground",
+      "s": "Python · FastAPI · FasterWhisper · KokoroTTS · Docker · LM Studio",
+      "b": [
+        "<h4>Overview</h4><p>Talk to an LLM out loud and have it talk back — with latency low enough that it feels like conversation, not dictation. Every stage runs locally.</p>",
+        "<h4>Architecture</h4><div class='arch'>Mic audio ──▸ FasterWhisper (STT)\n                  │ text\n                  ▼\n           LLM via LM Studio  ◂── conversation context\n                  │ reply\n                  ▼\n           KokoroTTS (voice)\n                  │ audio\n                  ▼\n              Speaker</div><p>A FastAPI backend orchestrates the loop: capture, transcription, generation, synthesis — with conversation context carried across turns.</p>",
+        "<h4>Key Decisions</h4><ul><li><b>FasterWhisper</b> over vanilla Whisper for transcription speed — the loop lives or dies on STT latency.</li><li><b>Streaming-minded pipeline:</b> each stage starts as early as possible instead of waiting for the previous one to fully finish.</li><li><b>Local inference</b> via LM Studio: private, free to run, and great for iterating.</li><li><b>Single Docker container</b> so the whole stack ships as one unit.</li></ul>",
+        "<h4>Challenges</h4><p>Latency budgeting across three models in a row, and keeping the conversation context useful without letting it bloat generation time.</p>",
+        "<h4>Results</h4><p>Bidirectional voice conversation with context carried across turns, responsive enough to interrupt and redirect — a working foundation for voice-agent experiments.</p>"
+      ],
+      "links": [["Repository", "https://github.com/naren-afk/Conversational_AI"]]
+    },
+    "localrag": {
+      "k": "DEPLOYED UNIT 03 · CASE STUDY",
+      "t": "Local RAG Research Assistant",
+      "s": "Python · Flask · FAISS · SentenceTransformers · PyMuPDF · LM Studio",
+      "b": [
+        "<h4>Overview</h4><p>RAG without the cloud: drop in your PDFs, ask questions, get grounded answers — and nothing ever leaves your machine. Built for anyone whose documents can't go to a third-party API.</p>",
+        "<h4>Architecture</h4><div class='arch'>PDFs ──▸ PyMuPDF extract ──▸ Chunking\n                                 │\n                                 ▼\n              SentenceTransformers embeddings\n                                 │\n                                 ▼\n                           FAISS index\n                                 │\nQuestion ──▸ embed ──▸ similarity search\n                                 │ top-k chunks\n                                 ▼\n              LM Studio LLM (offline) ──▸ grounded answer</div>",
+        "<h4>Key Decisions</h4><ul><li><b>FAISS</b> for vector search — fast, local, zero infrastructure.</li><li><b>Context-grounded prompting:</b> the model answers from retrieved chunks and is pushed to say so when the documents don't contain the answer — the main defense against hallucination.</li><li><b>Flask APIs</b> for ingestion, document management, and querying, so the system is usable programmatically, not just as a demo.</li></ul>",
+        "<h4>Challenges</h4><p>Chunking strategy dominates answer quality — too small loses context, too large dilutes retrieval. Getting PDF extraction clean across messy real-world documents was its own fight.</p>",
+        "<h4>Results</h4><p>A fully offline, privacy-first document Q&amp;A system — the architecture I later applied at production scale during the Wimera internship.</p>"
+      ],
+      "links": [["Repository", "https://github.com/naren-afk/Basic-RAG-Test"]]
+    },
+    "amazonml": {
+      "k": "MISSION DEBRIEF // TECHNICAL REPORT",
+      "t": "Business Entity Resolution at Scale",
+      "s": "Amazon ML Challenge ’26 · Team ZERO · LightGBM · TF-IDF · Modal · MIT",
+      "b": [
+        "<h4>Problem Statement</h4><p>Given a deduplicated reference list (S1), locate every matching business record in two additional datasets (S2, S3). <b>24.2 million records processed</b> in total — 1.73M S1 + 10.0M S2/S3 test records — spanning the US, India, and France.</p>",
+        "<h4>Dataset Characteristics</h4><p>Deliberately hostile: mixed scripts (nine Indic scripts in the Indian data), injected typos, planted look-alike records designed to fool matchers, and almost no postcodes to anchor on.</p>",
+        "<h4>Stage 1 — Preprocessing &amp; Normalization</h4><p>Custom transliteration maps nine Indic scripts to Latin using a single offset table. A <b>phonetic consonant skeleton</b> then collapses spelling variants — 'global' and its Tamil rendering both reduce to <b>klpl</b>. Mojibake, honorifics, and formatting noise are stripped; canonical states extracted per country.</p>",
+        "<h4>Stage 2 — Candidate Generation (Blocking)</h4><p>Five TF-IDF nearest-neighbor searches, constrained by country and state blocks, generate candidate pairs — recovering <b>95.4% of true pairs from just 0.0004%</b> of the possible pair space, capped at 20 candidates per S1 record per source.</p>",
+        "<h4>Stage 3 — Matching Model</h4><p>A <b>LightGBM classifier scores pairs on 46 features</b> spanning name, address, legal form, and competitive context. The decision threshold optimizes macro F0.5 per S1 record. Context features — how each candidate ranks among its competitors — drove <b>64% of model gains</b>. Extracting legal form from raw text exposed planted look-alikes that normalization had masked.</p>",
+        "<h4>Validation &amp; Results</h4><ul><li><b>0.949</b> macro F0.5 — public leaderboard</li><li><b>0.961</b> held-out validation (0.981 precision / 0.916 recall)</li><li><b>~2 hours</b> end-to-end on 16 cores via Modal — pure Python, no external APIs or lookups</li></ul><p class='mdim'>Figures above are public-leaderboard and internal-validation results; leaderboard top scores reached ~0.99. The repo documents unfinished experiments in reverse search and reranking.</p>",
+        "<h4>Lessons Learned</h4><p><b>Reading errors beat tuning models.</b> Manually analyzing 25 misclassified examples produced the single largest score improvement (+0.019 to +0.021) — more than any hyperparameter sweep. MIT-licensed as a reproducible baseline.</p>"
+      ],
+      "links": [["Full Writeup & Code", "https://github.com/naren-afk/Amazon-ML-Challenge-2026"]]
+    },
+    "cert1": {
+      "k": "CERTIFICATION",
+      "t": "Introduction to Data Engineering & Big Data",
+      "s": "GUVI — IIT Madras",
+      "img": "covers/cert1.jpg",
+      "b": [
+        "<p>Foundations of data pipelines, big data ecosystems, and scalable processing architectures — the theory behind the pipelines I now build in practice (the Amazon ML Challenge pipeline moves 24M records through exactly these patterns).</p>"
+      ],
+      "links": [["View Credential", "https://linkedin.com/in/narenkumar44"]]
+    },
+    "cert2": {
+      "k": "CERTIFICATION",
+      "t": "AWS Fundamentals",
+      "s": "Coursera",
+      "img": "covers/cert2.jpg",
+      "b": [
+        "<p>Core AWS services — EC2, S3, IAM — and cloud architecture principles. Applied directly: the Distributed URL Shortener runs on this exact stack.</p>"
+      ],
+      "links": [["View Credential", "https://linkedin.com/in/narenkumar44"]]
+    },
+    "cert3": {
+      "k": "CERTIFICATION",
+      "t": "DevOps, Cloud & Agile Development",
+      "s": "Coursera",
+      "img": "covers/cert3.jpg",
+      "b": [
+        "<p>CI/CD pipelines, DevOps practice, and Agile workflows for shipping software efficiently — the habits behind Dockerizing everything I build.</p>"
+      ],
+      "links": [["View Credential", "https://linkedin.com/in/narenkumar44"]]
+    }
+  }
+}
