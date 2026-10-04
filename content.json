@@ -241,7 +241,7 @@
     "artists_head": "Top Artists",
     "beacon_note": "The floating beacon bottom-right mirrors my live Discord presence — a spinning record when I'm listening, a pulse when I'm in-game.",
     "games": [
-      {"img": "covers/Manor_Lords.jpg",  "art": "ga-field",   "initials": "ML",  "tag": "City Builder",   "name": "Manor Lords",               "about": "Growing a medieval village into a thriving manor — organic town planning, trade, and tactical battles."},
+      {"img": "covers/g1.jpg",  "art": "ga-field",   "initials": "ML",  "tag": "City Builder",   "name": "Manor Lords",               "about": "Growing a medieval village into a thriving manor — organic town planning, trade, and tactical battles."},
       {"img": "covers/g2.jpg",  "art": "ga-royal",   "initials": "II",  "tag": "RTS",            "name": "Age of Empires II: DE",     "about": "The legendary real-time strategy — build, boom, and conquer across history's civilizations."},
       {"img": "covers/g3.jpg",  "art": "ga-anemo",   "initials": "GI",  "tag": "Open World RPG", "name": "Genshin Impact",            "about": "Elemental combat and exploration across the open world of Teyvat."},
       {"img": "covers/g4.jpg",  "art": "ga-tac",     "initials": "CS2", "tag": "Tactical FPS",   "name": "Counter-Strike 2",          "about": "The definitive tactical shooter — utility, aim, and clutch rounds."},
